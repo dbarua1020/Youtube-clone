@@ -17,6 +17,7 @@
         }
 
         .search-bar {
+            display: block;
            /* font-size: 20px;
             margin-left: 12px;  */
         }
@@ -32,6 +33,9 @@
 
         .video-preview{
            width: 300px;
+           display: inline-block;
+           vertical-align: top;     /* brings the 2nd image to the level of the 1st image */
+           margin-right: 15px;
         }
 
     </style>
@@ -40,14 +44,25 @@
     <input class="search-bar" type="text" placeholder="Search">
 
     <div class="video-preview">
-    <img class="thumbnail" src="https://supersimple.dev/public/img/exercises/youtube/thumbnails/thumbnail-1.webp">
+    <img class="thumbnail" src="thumbnail/thumbnail-1.webp">
 
     <p class="video-title">
-         Talking Tech and AI with Google CEO Sundar Pichai!</p>
+         <strong> Talking Tech and AI with Google CEO Sundar Pichai! </strong> </p>
     <p class="video-author"> Marques Brownlee </p> <br>
     <p class="video-stats"> 
         3.4M views &#183; 6 months ago </p>
     </div>
+
+    <div class="video-preview">
+        <img class="thumbnail" src="thumbnail/thumbnail-2.webp">
+    
+        <p class="video-title">
+            <strong> Try Not to Laugh Challenge #9  </strong> </p>
+        <p class="video-author"> Markiplier </p> <br>
+        <p class="video-stats"> 
+            3.4M views &#183; 6 months ago </p>
+        </div>
+
 </body>
 </html>
 
