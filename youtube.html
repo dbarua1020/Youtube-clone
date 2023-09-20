@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Youtube.com Clone </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Roboto+Condensed:ital,wght@1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
+
+        p{
+            font-family: Roboto, Arial;  /* font stack - helps setup a backup font */
+            margin-top: 0;
+            margin-bottom: 0;
+        }
         .thumbnail {
             width: 300px;
             display: block;
@@ -26,6 +37,14 @@
             display: inline-block;
         } */ 
 
+        .video-title{
+            margin-top: 0;
+            font-size: 14px;
+            font-weight: 500;   /* bold = 700, medium=500, regular=400 */
+            line-height: 20px;
+            margin-bottom: 12px;
+        }
+
         .video-preview{
            width: 300px;
            display: inline-block;
@@ -45,7 +64,22 @@
         }
 
         .profile-picture{
-            width: 100%;
+            width: 40px;
+            border-radius: 50px;
+        }
+
+        .thumbnail-row{
+            margin-bottom: 12px;
+        }
+
+        .video-stats {
+            font-size: 12px;
+            color: rgb(96,96,96);
+        }
+
+        
+        .video-author{
+            margin-bottom: 6px;  /* 3:16  */
         }
 
     </style>
@@ -54,7 +88,7 @@
     <input class="search-bar" type="text" placeholder="Search">
 
     <div class="video-preview">
-        <div>
+        <div class="thumbnail-row">
             <img class="thumbnail" src="file:///C:/Users/dbaru/OneDrive/Desktop/youtube%20clone/thumbnail/thumbnail-1.webp">
         </div>
         <div>
@@ -71,19 +105,33 @@
         </div>
     </div>
 
+
     <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="file:///C:/Users/dbaru/OneDrive/Desktop/youtube%20clone/thumbnail/thumbnail-2.webp">
+        </div>
         <div>
-        <img class="thumbnail" src="file:///C:/Users/dbaru/OneDrive/Desktop/youtube%20clone/thumbnail/thumbnail-2.webp">
+            <div class="channel-picture">  
+                <img class="profile-picture"
+                src="file:///C:/Users/dbaru/OneDrive/Desktop/youtube%20clone/channel-pictures/mkbhd.jpeg"
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    <strong> Try Not to Laugh Challenge #9 </strong> </p>
+                    <p class="video-author"> Markiplier </p> 
+                    <p class="video-stats"> 3.4M views &#183; 6 months ago </p>
+            </div>
         </div>
-        <p class="video-title">
-            <strong> Try Not to Laugh Challenge #9  </strong> </p>
-        <p class="video-author"> Markiplier </p> 
-        <p class="video-stats"> 
-            3.4M views &#183; 6 months ago </p>
-        </div>
+    </div>
+
+  
 
 </body>
 </html>
+
+
+
+
 
 
 
