@@ -52,15 +52,17 @@
            margin-right: 15px;
         }
 
-        .channel-picture{
-            display: inline-block;
-            width: 50px;
-            vertical-align: top;    
+        .video-info-grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+
+        .channel-picture{   
+            background-color: gray;
         }
 
         .video-info{
-            display: inline-block;
-            width: 200px;
+            background-color: gray;
         }
 
         .profile-picture{
@@ -91,12 +93,11 @@
         <div class="thumbnail-row">
             <img class="thumbnail" src="file:///C:/Users/dbaru/OneDrive/Desktop/youtube%20clone/thumbnail/thumbnail-1.webp">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">
                 <img class="profile-picture"
                 src="file:///C:/Users/dbaru/OneDrive/Desktop/youtube%20clone/channel-pictures/mkbhd.jpeg"
-            </div>
-            <div class="video-info">
+            </div> <div class="video-info">
                 <p class="video-title">
                     <strong> Talking Tech and AI with Google CEO Sundar Pichai! </strong> </p>
                     <p class="video-author"> Marques Brownlee </p> 
@@ -110,7 +111,7 @@
         <div class="thumbnail-row">
             <img class="thumbnail" src="file:///C:/Users/dbaru/OneDrive/Desktop/youtube%20clone/thumbnail/thumbnail-2.webp">
         </div>
-        <div>
+        <div class="video-info-grid">
             <div class="channel-picture">  
                 <img class="profile-picture"
                 src="file:///C:/Users/dbaru/OneDrive/Desktop/youtube%20clone/channel-pictures/mkbhd.jpeg"
@@ -124,8 +125,14 @@
         </div>
     </div>
 
+  
+
 </body>
 </html>
+
+
+
+
 
 
 
